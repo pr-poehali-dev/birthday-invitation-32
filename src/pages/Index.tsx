@@ -66,7 +66,7 @@ export default function Index() {
 
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center gap-8 py-5 bg-[#faf8f4]/80 backdrop-blur-sm border-b border-[#e8e0d0]">
-        {["Главная", "Место", "RSVP"].map((item) => (
+        {["Главная", "Место", "Галерея", "RSVP"].map((item) => (
           <a
             key={item}
             href={`#${item}`}
@@ -155,6 +155,38 @@ export default function Index() {
       </section>
 
 
+
+      {/* ГАЛЕРЕЯ */}
+      <section id="Галерея" className="py-28 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="font-body text-[10px] uppercase tracking-[0.3em] text-[#9a8a72] mb-4">Тогда и сейчас</p>
+          <h2 className="font-display text-5xl md:text-7xl font-light italic text-[#2c2417] mb-16">Как я менялась</h2>
+
+          <div className="grid grid-cols-2 gap-6 md:gap-10">
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-full aspect-[3/4] overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/6f592f54-ec10-4ca4-8f6d-9a7b53ceba96.jpg"
+                  alt="2004"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              <p className="font-display text-3xl md:text-5xl font-light italic text-[#c4a882]">2004</p>
+            </div>
+
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-full aspect-[3/4] overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/1ce4febf-76c0-4ece-ac97-b9999a86628c.jpg"
+                  alt="2026"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              <p className="font-display text-3xl md:text-5xl font-light italic text-[#c4a882]">2026</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="w-24 h-px bg-[#e8e0d0] mx-auto" />
 
