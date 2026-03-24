@@ -198,6 +198,11 @@ export default function Index() {
             <p className="font-display text-2xl md:text-3xl font-light italic text-[#2c2417] leading-relaxed">
               Каждый гость готовит тост в мою честь.
             </p>
+            <div className="mt-6 pt-6 border-t border-[#e8e0d0]">
+              <p className="font-display text-lg md:text-xl font-light italic text-[#9a8a72] leading-relaxed">
+                Если ты не придёшь — дай мне знать, чтобы я могла добавить тебя в чёрный список.
+              </p>
+            </div>
           </div>
         </div>
       </section>
