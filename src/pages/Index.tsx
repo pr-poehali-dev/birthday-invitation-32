@@ -215,7 +215,7 @@ export default function Index() {
           <div className="border border-[#c4a882] p-8 md:p-12 text-center relative">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#faf8f4] px-4 font-body text-[10px] uppercase tracking-[0.3em] text-[#c4a882]">Важно</span>
             <p className="font-display text-2xl md:text-3xl font-light italic text-[#2c2417] leading-relaxed">
-              <span className="text-[#c4a882]">Каждый гость готовит тост в мою честь.</span>
+              <span className="text-red-500">Каждый гость готовит тост в мою честь.</span>
             </p>
             <div className="mt-6 pt-6 border-t border-[#e8e0d0]">
               <p className="font-display text-lg md:text-xl font-light italic text-[#9a8a72] leading-relaxed">
