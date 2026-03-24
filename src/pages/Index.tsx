@@ -142,7 +142,7 @@ export default function Index() {
               г. Благовещенск, ул. Шевченко, 11/1
             </p>
             <a
-              href="https://yandex.ru/maps/?text=Благовещенск%2C+ул.+Шевченко%2C+11/1"
+              href="https://yandex.ru/maps/?text=Благовещенск%2C+кафе+Цветок+Солнца%2C+ул.+Шевченко%2C+11/1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 border border-[#c4a882] text-[#c4a882] font-body text-[10px] uppercase tracking-[0.2em] hover:bg-[#c4a882] hover:text-white transition-all duration-300"
