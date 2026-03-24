@@ -190,6 +190,20 @@ export default function Index() {
 
       <div className="w-24 h-px bg-[#e8e0d0] mx-auto" />
 
+      {/* ВАЖНО */}
+      <section className="py-16 px-6">
+        <div className="max-w-xl mx-auto">
+          <div className="border border-[#c4a882] p-8 md:p-12 text-center relative">
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#faf8f4] px-4 font-body text-[10px] uppercase tracking-[0.3em] text-[#c4a882]">Важно</span>
+            <p className="font-display text-2xl md:text-3xl font-light italic text-[#2c2417] leading-relaxed">
+              Каждый гость готовит тост в мою честь.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="w-24 h-px bg-[#e8e0d0] mx-auto" />
+
       {/* RSVP */}
       <section id="RSVP" ref={section4.ref} className={`py-28 px-6 transition-all duration-1000 delay-100 ${section4.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
         <div className="max-w-xl mx-auto text-center">
