@@ -52,12 +52,24 @@ export default function Index() {
   const countdown = useCountdown(PARTY_DATE);
   const [rsvp, setRsvp] = useState({ name: "", attending: "yes", guests: "1", wish: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const section2 = useInView();
   const section4 = useInView();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
+    try {
+      await fetch("https://functions.poehali.dev/9e8f9df1-5adb-4855-a6ed-d9e0b484650a", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(rsvp),
+      });
+    } catch (err) {
+      console.error(err);
+    }
+    setLoading(false);
     setSubmitted(true);
   };
 
@@ -286,9 +298,10 @@ export default function Index() {
 
               <button
                 type="submit"
-                className="w-full py-4 bg-[#2c2417] text-white font-body text-[10px] uppercase tracking-[0.3em] hover:bg-[#c4a882] transition-colors duration-500 mt-4"
+                disabled={loading}
+                className="w-full py-4 bg-[#2c2417] text-white font-body text-[10px] uppercase tracking-[0.3em] hover:bg-[#c4a882] transition-colors duration-500 mt-4 disabled:opacity-60"
               >
-                Подтвердить присутствие
+                {loading ? "Отправляем..." : "Подтвердить присутствие"}
               </button>
             </form>
           )}
