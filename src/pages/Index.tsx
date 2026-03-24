@@ -143,10 +143,19 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="mt-16 p-6 border border-[#e8e0d0] rounded-sm bg-white/50">
+          <div className="mt-16 p-6 border border-[#e8e0d0] rounded-sm bg-white/50 flex flex-col items-center gap-4">
             <p className="font-body text-sm text-[#7a6a52] leading-relaxed">
               г. Благовещенск, ул. Шевченко, 11/1
             </p>
+            <a
+              href="https://yandex.ru/maps/?text=Благовещенск%2C+ул.+Шевченко%2C+11/1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-[#c4a882] text-[#c4a882] font-body text-[10px] uppercase tracking-[0.2em] hover:bg-[#c4a882] hover:text-white transition-all duration-300"
+            >
+              <Icon name="MapPin" size={14} />
+              Открыть в Яндекс Картах
+            </a>
           </div>
         </div>
       </section>
