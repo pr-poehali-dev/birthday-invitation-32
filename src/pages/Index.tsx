@@ -105,7 +105,7 @@ export default function Index() {
             на праздничный вечер
           </h1>
           <p className="font-display text-2xl md:text-4xl font-light text-[#7a6a52] mt-4 mb-12">
-            в честь меня
+            в честь Кристины
           </p>
 
           <div className="w-12 h-px bg-[#c4a882] mx-auto mb-12" />
@@ -310,7 +310,7 @@ export default function Index() {
 
       {/* FOOTER */}
       <footer className="py-10 text-center border-t border-[#e8e0d0]">
-        <p className="font-display text-lg italic text-[#9a8a72]">С любовью ждём тебя ✦</p>
+        <p className="font-display text-lg italic text-[#9a8a72]">С любовью, Кристина ✦</p>
       </footer>
     </div>
   );
