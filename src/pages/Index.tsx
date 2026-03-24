@@ -168,7 +168,7 @@ export default function Index() {
                 <img
                   src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/6f592f54-ec10-4ca4-8f6d-9a7b53ceba96.jpg"
                   alt="2004"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
               </div>
               <p className="font-display text-3xl md:text-5xl font-light italic text-[#c4a882]">2004</p>
@@ -179,7 +179,7 @@ export default function Index() {
                 <img
                   src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/1ce4febf-76c0-4ece-ac97-b9999a86628c.jpg"
                   alt="2026"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
               </div>
               <p className="font-display text-3xl md:text-5xl font-light italic text-[#c4a882]">2026</p>
