@@ -137,7 +137,7 @@ export default function Index() {
             <div className="flex flex-col items-center gap-4">
               <div className="w-full aspect-[3/4] overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/6f592f54-ec10-4ca4-8f6d-9a7b53ceba96.jpg"
+                  src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/011ff7ff-5d44-4742-a0be-f66f208d1b30.jpg"
                   alt="2004"
                   className="w-full h-full object-cover transition-all duration-700"
                 />
@@ -148,7 +148,7 @@ export default function Index() {
             <div className="flex flex-col items-center gap-4">
               <div className="w-full aspect-[3/4] overflow-hidden">
                 <img
-                  src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/1ce4febf-76c0-4ece-ac97-b9999a86628c.jpg"
+                  src="https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/bucket/84e9ff3f-30cc-40d5-a8b5-55ec67c9359e.jpg"
                   alt="2026"
                   className="w-full h-full object-cover transition-all duration-700"
                 />
