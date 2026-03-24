@@ -105,7 +105,7 @@ export default function Index() {
             на праздничный вечер
           </h1>
           <p className="font-display text-2xl md:text-4xl font-light text-[#7a6a52] mt-4 mb-12">
-            в честь Кристины
+            в честь самой лучшей меня
           </p>
 
           <div className="w-12 h-px bg-[#c4a882] mx-auto mb-12" />
