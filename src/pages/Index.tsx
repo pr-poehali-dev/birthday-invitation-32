@@ -274,11 +274,11 @@ export default function Index() {
               )}
 
               <div>
-                <label className="font-body text-[10px] uppercase tracking-[0.2em] text-[#9a8a72] block mb-2">Пожелание имениннику</label>
+                <label className="font-body text-[10px] uppercase tracking-[0.2em] text-[#9a8a72] block mb-2">Пожелания по алкоголю</label>
                 <textarea
                   value={rsvp.wish}
                   onChange={(e) => setRsvp({ ...rsvp, wish: e.target.value })}
-                  placeholder="Напишите тёплые слова..."
+                  placeholder="Что будешь пить?"
                   rows={3}
                   className="w-full border-b border-[#e8e0d0] bg-transparent py-3 font-body text-sm text-[#2c2417] placeholder:text-[#c4b89a] focus:outline-none focus:border-[#c4a882] transition-colors resize-none"
                 />
