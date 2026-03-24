@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const HERO_IMAGE = "https://cdn.poehali.dev/projects/a77ca3b7-3c14-49f7-bda6-74bfac4a67ec/files/0609a2d8-e823-4e58-b294-266cf9acb0b9.jpg";
 
-const PARTY_DATE = new Date("2026-06-15T19:00:00");
+const PARTY_DATE = new Date("2026-04-15T19:00:00");
 
 function useCountdown(target: Date) {
   const calc = () => {
@@ -129,9 +129,9 @@ export default function Index() {
 
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { icon: "Calendar", label: "Дата", value: "15 июня 2026" },
+              { icon: "Calendar", label: "Дата", value: "15 апреля 2026" },
               { icon: "Clock", label: "Начало", value: "19:00" },
-              { icon: "MapPin", label: "Место", value: "Ресторан «Название»" },
+              { icon: "MapPin", label: "Место", value: "Улица Шевченко, 11/1" },
             ].map(({ icon, label, value }) => (
               <div key={label} className="flex flex-col items-center gap-4">
                 <div className="w-14 h-14 rounded-full border border-[#e8e0d0] flex items-center justify-center">
@@ -145,8 +145,7 @@ export default function Index() {
 
           <div className="mt-16 p-6 border border-[#e8e0d0] rounded-sm bg-white/50">
             <p className="font-body text-sm text-[#7a6a52] leading-relaxed">
-              Адрес: г. Москва, ул. Примерная, д. 1<br />
-              <span className="text-[#9a8a72] text-xs">Парковка доступна рядом с рестораном</span>
+              Улица Шевченко, 11/1
             </p>
           </div>
         </div>
@@ -191,7 +190,7 @@ export default function Index() {
         <div className="max-w-xl mx-auto text-center">
           <p className="font-body text-[10px] uppercase tracking-[0.3em] text-[#9a8a72] mb-4">Подтверждение</p>
           <h2 className="font-display text-5xl md:text-7xl font-light italic text-[#2c2417] mb-4">RSVP</h2>
-          <p className="font-body text-sm text-[#9a8a72] mb-12">Пожалуйста, подтвердите своё присутствие до 1 июня</p>
+          <p className="font-body text-sm text-[#9a8a72] mb-12">Пожалуйста, подтвердите своё присутствие до 10 апреля</p>
 
           {submitted ? (
             <div className="py-16 animate-[fade-up_0.6s_ease-out_forwards]">
