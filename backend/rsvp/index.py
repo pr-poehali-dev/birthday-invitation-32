@@ -40,13 +40,22 @@ def handler(event: dict, context) -> dict:
 
     token = os.environ['TELEGRAM_BOT_TOKEN']
     url = f'https://api.telegram.org/bot{token}/sendMessage'
-    payload = json.dumps({'chat_id': CHAT_ID, 'text': message}).encode()
+    payload = json.dumps({'chat_id': int(CHAT_ID), 'text': message}).encode()
 
     req = urllib.request.Request(url, data=payload, headers={'Content-Type': 'application/json'})
-    urllib.request.urlopen(req)
+    try:
+        resp = urllib.request.urlopen(req)
+        resp_body = resp.read().decode()
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode()
+        return {
+            'statusCode': 200,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'ok': False, 'error': err_body})
+        }
 
     return {
         'statusCode': 200,
         'headers': {'Access-Control-Allow-Origin': '*'},
-        'body': json.dumps({'ok': True})
+        'body': json.dumps({'ok': True, 'tg': resp_body})
     }
