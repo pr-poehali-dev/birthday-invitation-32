@@ -183,7 +183,14 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="mt-16 p-6 border border-[#e8e0d0] rounded-sm bg-white/50 flex flex-col items-center gap-4">
+          <div className="mt-10 flex justify-center">
+            <div className="inline-flex items-center gap-3 px-6 py-4 bg-[#fdf6ee] border border-[#e8e0d0] rounded-sm">
+              <span className="text-2xl">🎤</span>
+              <p className="font-display text-xl italic text-[#2c2417]">На вечере будет караоке!</p>
+            </div>
+          </div>
+
+          <div className="mt-6 p-6 border border-[#e8e0d0] rounded-sm bg-white/50 flex flex-col items-center gap-4">
             <p className="font-body text-sm text-[#7a6a52] leading-relaxed">
               г. Благовещенск, ул. Шевченко, 11/1
             </p>
