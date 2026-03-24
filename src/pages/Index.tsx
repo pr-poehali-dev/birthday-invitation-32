@@ -125,7 +125,7 @@ export default function Index() {
             {[
               { icon: "Calendar", label: "Дата", value: "15 апреля 2026" },
               { icon: "Clock", label: "Начало", value: "19:00" },
-              { icon: "MapPin", label: "Место", value: "Благовещенск" },
+              { icon: "MapPin", label: "Место", value: "Кафе «Цветок Солнца»" },
             ].map(({ icon, label, value }) => (
               <div key={label} className="flex flex-col items-center gap-4">
                 <div className="w-14 h-14 rounded-full border border-[#e8e0d0] flex items-center justify-center">
