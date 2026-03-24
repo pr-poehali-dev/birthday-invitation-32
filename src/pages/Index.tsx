@@ -35,12 +35,7 @@ function useInView(threshold = 0.15) {
   return { ref, inView };
 }
 
-const schedule = [
-  { time: "19:00", title: "Сбор гостей", desc: "Приветственные напитки и закуски" },
-  { time: "20:00", title: "Торжественный ужин", desc: "Праздничный стол и тосты" },
-  { time: "21:30", title: "Разрезание торта", desc: "Главный момент вечера" },
-  { time: "22:00", title: "Танцы и музыка", desc: "До самого утра" },
-];
+
 
 function CountdownBlock({ value, label }: { value: number; label: string }) {
   return (
@@ -59,7 +54,6 @@ export default function Index() {
   const [submitted, setSubmitted] = useState(false);
 
   const section2 = useInView();
-  const section3 = useInView();
   const section4 = useInView();
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -72,7 +66,7 @@ export default function Index() {
 
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center gap-8 py-5 bg-[#faf8f4]/80 backdrop-blur-sm border-b border-[#e8e0d0]">
-        {["Главная", "Место", "Расписание", "RSVP"].map((item) => (
+        {["Главная", "Место", "RSVP"].map((item) => (
           <a
             key={item}
             href={`#${item}`}
@@ -160,37 +154,7 @@ export default function Index() {
         </div>
       </section>
 
-      <div className="w-24 h-px bg-[#e8e0d0] mx-auto" />
 
-      {/* РАСПИСАНИЕ */}
-      <section id="Расписание" ref={section3.ref} className={`py-28 px-6 transition-all duration-1000 delay-100 ${section3.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="font-body text-[10px] uppercase tracking-[0.3em] text-[#9a8a72] mb-4">Программа</p>
-            <h2 className="font-display text-5xl md:text-7xl font-light italic text-[#2c2417]">Расписание дня</h2>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-[72px] top-0 bottom-0 w-px bg-[#e8e0d0]" />
-            {schedule.map((item, i) => (
-              <div
-                key={i}
-                className="flex gap-6 mb-10 items-start"
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                <div className="w-[72px] text-right flex-shrink-0">
-                  <span className="font-body text-xs text-[#9a8a72] tracking-wider">{item.time}</span>
-                </div>
-                <div className="relative pl-8 pb-4">
-                  <div className="absolute left-[-4px] top-[6px] w-2 h-2 rounded-full bg-[#c4a882] border-2 border-[#faf8f4]" />
-                  <p className="font-display text-xl font-light text-[#2c2417] mb-1">{item.title}</p>
-                  <p className="font-body text-xs text-[#9a8a72] leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <div className="w-24 h-px bg-[#e8e0d0] mx-auto" />
 
